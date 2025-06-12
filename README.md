@@ -1,7 +1,7 @@
-# JavaEE 课设项目（Struts2+JSP+MySQL）
+# JavaEE demo（Struts2+JSP+MySQL）
 
 ## 一、项目简介
-本项目为JavaEE课程小作业，采用Maven+Struts2+JSP+MySQL实现，包含注册、登录、退出、黑名单拦截、过滤器、文件上传、留言板、评价、排序等功能。页面美观，数据真实写入数据库，适合课设交付和二次部署。
+本demo采用Maven+Struts2+JSP+MySQL实现，包含注册、登录、退出、黑名单拦截、过滤器、文件上传、留言板、评价、排序等功能。页面美观，数据真实写入数据库。
 
 ## 二、技术栈说明
 - **后端框架**：Struts2 2.5.x
@@ -51,7 +51,6 @@ CREATE TABLE IF NOT EXISTS comment (
 
 ## 五、IDEA导入、配置、运行详细步骤（适合小白）
 1. **克隆项目**
-   - 在GitHub新建仓库，上传本项目代码（见本README顶部操作指引）。
    - 也可直接下载zip解压。
 2. **用IDEA打开项目根目录**
    - 选择"Open"或"导入项目"，选中`pom.xml`自动识别为Maven项目。
@@ -63,7 +62,7 @@ CREATE TABLE IF NOT EXISTS comment (
    - 部署Artifact：选择`struts2demo:war exploded`。
 5. **配置数据库**
    - 安装MySQL，创建数据库和表（可用`db.sql`一键导入）。
-   - 默认数据库连接：`localhost:3306/struts2demo`，用户名`root`，密码`abc123`。
+   - 默认数据库连接：`localhost:3306/struts2demo`，用户名`root`，密码`xxx`。
    - 如需修改，编辑`src/main/java/com/demo/dao/MessageDao.java`、`CommentDao.java`、`javabean/DBAccess.java`等文件中的连接信息。
 6. **运行项目**
    - 启动Tomcat，浏览器访问`http://localhost:8080/struts2demo/`。
@@ -82,12 +81,3 @@ CREATE TABLE IF NOT EXISTS comment (
 - 首页、注册、登录、留言板、评价、文件上传等页面入口清晰。
 - 排序按钮用Struts2标签生成URL，切换排序后内容不丢失。
 
-## 八、交付与部署到他人电脑注意事项
-- 确保目标电脑已安装JDK 8+/11+、MySQL 8+、Tomcat 9+、IDEA（或Eclipse）。
-- 数据库连接信息如有变动需同步修改源码。
-- 上传到GitHub后，建议在新环境完整测试一遍。
-- 如遇问题，优先查看IDEA控制台和Tomcat日志，按本README排查。
-
----
-
-如有更多问题，欢迎联系本项目开发者！ 
