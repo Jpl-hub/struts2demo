@@ -21,4 +21,27 @@ CREATE TABLE IF NOT EXISTS comment (
   score INT NOT NULL,
   content TEXT NOT NULL,
   create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 用户详细信息表
+CREATE TABLE IF NOT EXISTS user_profile (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  real_name VARCHAR(50),
+  phone VARCHAR(20),
+  address TEXT,
+  avatar VARCHAR(200),
+  create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  UNIQUE KEY unique_username (username)
+);
+
+-- 用户登录日志表
+CREATE TABLE IF NOT EXISTS user_login_log (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  login_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  login_ip VARCHAR(50),
+  login_device VARCHAR(500),
+  status VARCHAR(20) DEFAULT 'SUCCESS'
 ); 

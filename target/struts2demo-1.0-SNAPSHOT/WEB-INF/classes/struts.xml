@@ -41,5 +41,19 @@
             <result name="success">/comment.jsp</result>
             <result name="input">/comment.jsp</result>
         </action>
+        <action name="profile" class="com.demo.action.UserProfileAction" method="execute">
+            <result name="success">/profile.jsp</result>
+            <result name="input">/profile.jsp</result>
+            <result name="login">/login.jsp</result>
+        </action>
+        <action name="profile!save" class="com.demo.action.UserProfileAction" method="save">
+            <result name="success">/profile.jsp</result>
+            <result name="input">/profile.jsp</result>
+            <result name="login">/login.jsp</result>
+        </action>
+        <action name="login-history" class="com.demo.action.LoginHistoryAction" method="execute">
+            <result name="success">/login-history.jsp</result>
+            <result name="login">/login.jsp</result>
+        </action>
     </package>
 </struts> 

@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .main-container {
-            width: 400px;
+            width: 500px;
             margin: 100px auto;
             background: #fff;
             border-radius: 10px;
@@ -35,34 +35,54 @@
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
+            margin-top: 20px;
         }
         .logout-btn:hover {
             background: #c23616;
         }
         .nav-link {
             display: inline-block;
-            margin: 10px 15px;
-            padding: 8px 20px;
+            margin: 8px 10px;
+            padding: 8px 16px;
             background: #273c75;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             transition: background 0.3s;
+            font-size: 14px;
         }
         .nav-link:hover {
             background: #4078c0;
             color: #fff;
+        }
+        .nav-section {
+            margin: 25px 0;
+        }
+        .section-title {
+            color: #273c75;
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 <div class="main-container">
     <h2>欢迎你，<%=username%>！</h2>
-    <div style="margin: 30px 0;">
+    
+    <div class="nav-section">
+        <div class="section-title">个人中心</div>
+        <a href="profile.action" class="nav-link">个人资料</a>
+        <a href="login-history.action" class="nav-link">登录历史</a>
+    </div>
+    
+    <div class="nav-section">
+        <div class="section-title">功能模块</div>
         <a href="upload.jsp" class="nav-link">文件上传</a>
         <a href="message.action" class="nav-link">留言板</a>
         <a href="comment.action" class="nav-link">评价</a>
     </div>
+    
     <form action="logout.action" method="post">
         <input type="submit" value="退出登录" class="logout-btn"/>
     </form>

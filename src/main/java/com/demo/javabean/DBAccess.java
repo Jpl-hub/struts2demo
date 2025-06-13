@@ -64,6 +64,16 @@ public class DBAccess {
         return value;
     }
 
+    public Timestamp getTimestamp(String field) {
+        Timestamp timestamp = null;
+        try {
+            if (rs != null) timestamp = rs.getTimestamp(field);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return timestamp;
+    }
+
     public void closeConn() {
         try {
             if (conn != null) conn.close();
