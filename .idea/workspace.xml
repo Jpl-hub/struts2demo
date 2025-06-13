@@ -9,16 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26904f5d-841d-4c8b-afdc-a6cea72aefef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e876f82a-52f3-4144-89d9-0fef7a34e9c6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e876f82a-52f3-4144-89d9-0fef7a34e9c6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/action/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/javabean/DBAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/javabean/DBAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="26904f5d-841d-4c8b-afdc-a6cea72aefef" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749738214872</updated>
       <workItem from="1749738216051" duration="13594000" />
-      <workItem from="1749781878711" duration="2265000" />
+      <workItem from="1749781878711" duration="3099000" />
     </task>
     <servers />
   </component>
